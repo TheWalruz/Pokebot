@@ -1,30 +1,17 @@
 const Discord = require('discord.js');
 const auth = require('./auth.json');
-const mysql = require('mysql');
 const pokemon = require('pokemontcgsdk');
 const logger = require('winston');
 const client = new Discord.Client();
 
-let cid = [];
-
-var bot = new Discord.Client({
-   token: auth.token,
-   autorun: true
-});
-
-bot.on('ready', function (evt) {
-    logger.info('Connected');
-    logger.info('Logged in as: ');
-    logger.info(bot.username + ' - (' + bot.id + ')');
-});
-
+client.login(auth.token);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', msg => {
-  let comtoken = '!'
+  const comtoken = '!'
   if(msg.content.substring(0,1) == comtoken) {
     let args = msg.content.substring(1).split(' ')
     let cmd = args[0]
@@ -72,5 +59,3 @@ client.on('message', msg => {
     };
   }
 });
-
-client.login(auth.token);
