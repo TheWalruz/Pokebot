@@ -14,6 +14,7 @@ Garbodor - HP:120 - <image src = "https://i.imgur.com/07m9xN3.png" width="25" he
 ><image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/>2x <br>
 >![image](https://i.imgur.com/ITLYzhC.png)
 <hr>
+
 > !ids [cardName]
 
 Returns ids of cards with given card cardName <br>
