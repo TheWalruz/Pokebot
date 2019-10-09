@@ -1,5 +1,5 @@
 # Pokebot
-[Usage](usage)
+[Usage](#Usage)
 ## <a name= usage></a> Usage
 >!card [cardId]
 
