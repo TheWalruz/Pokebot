@@ -12,9 +12,10 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   const comtoken = '!'
-  if(msg.content.substring(0,1) == comtoken) {
+  if(msg.content.substring(0,1) == comtoken && msg.content.replace(/ +(?= )/g,'').split(" ")[1]) {
     let args = msg.content.substring(1).split(' ')
     let cmd = args[0]
+    let colorless = client.emojis.find(emoji => emoji.name == "Colorless")
 
     switch(cmd) {
       //!ping
@@ -37,10 +38,10 @@ client.on('message', msg => {
               msg.channel.send(`${weakness} ${result.card.weaknesses[0].value}`)
             }
             if(result.card.resistances) {
-              let resistance = client.emojis.find(emoji => emoji.name == `${result.card.resistances[0].typa}`)
+              let resistance = client.emojis.find(emoji => emoji.name == `${result.card.resistances[0].type}`)
               msg.channel.send(`${resistance} ${result.card.resistances[0].value}`)
             }
-            msg.channel.send(`${result.card.imageUrl}`)
+            msg.channel.send(`${result.card.retreatCost.length} ${colorless} Retreat\n${result.card.imageUrl}`)
           })
       break;
 
