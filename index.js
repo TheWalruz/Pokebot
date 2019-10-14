@@ -35,11 +35,11 @@ client.on('message', msg => {
             }
             if(result.card.weaknesses) {
               let weakness = client.emojis.find(emoji => emoji.name == `${result.card.weaknesses[0].type}`)
-              msg.channel.send(`${weakness} ${result.card.weaknesses[0].value}`)
+              msg.channel.send(`${result.card.weaknesses[0].value} ${weakness} Weakness`)
             }
             if(result.card.resistances) {
               let resistance = client.emojis.find(emoji => emoji.name == `${result.card.resistances[0].type}`)
-              msg.channel.send(`${resistance} ${result.card.resistances[0].value}`)
+              msg.channel.send(`${result.card.resistances[0].value} ${resistance} Resistance`)
             }
             msg.channel.send(`${result.card.retreatCost.length} ${colorless} Retreat\n${result.card.imageUrl}`)
           })

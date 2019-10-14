@@ -11,7 +11,7 @@ Garbodor - HP:120 - <image src = "https://i.imgur.com/07m9xN3.png" width="25" he
 >This attack does 20 damage fo each Item card in you opponent's discard pile. <br>
 ><image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/><image src = "https://i.imgur.com/bJIVLVE.png" width="25" height="25"/><image src = "https://i.imgur.com/bJIVLVE.png" width="25" height="25"/>: Acid Spray 70 <br>
 >Flip a coin. If heads, discard an Energy from your opponent's Active Pokémon.<br>
-><image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/>2x <br>
+> 2x <image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/> Weakness <br>
 3 <image src = "https://i.imgur.com/bJIVLVE.png" width="25" height="25"/> Retreat <br>
 >![image](https://i.imgur.com/ITLYzhC.png)
 <hr>
