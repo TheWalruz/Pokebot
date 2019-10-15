@@ -6,7 +6,7 @@
 Returns information on a card given a card id <br>
 Example: <br>
 >!card sm2-51 should return <br>
-Garbodor - HP:120 - <image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/>
+Garbodor - HP:120 - <image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/> <br>
 ><image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/>: Trashalanche 20x
 >This attack does 20 damage fo each Item card in you opponent's discard pile. <br>
 ><image src = "https://i.imgur.com/07m9xN3.png" width="25" height="25"/><image src = "https://i.imgur.com/bJIVLVE.png" width="25" height="25"/><image src = "https://i.imgur.com/bJIVLVE.png" width="25" height="25"/>: Acid Spray 70 <br>
